@@ -1,0 +1,50 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "standard",
+    "eslint:recommended",
+    "standard-react"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "defaultParams": true
+    }
+  },
+  "rules": {
+    // A jsx extension is not required for files containing jsx
+    "react/jsx-filename-extension": 0,
+    // This rule struggles with flow and class properties
+    "react/sort-comp": 0,
+    // ignore linebreak style. the CRLF / LF endings wont matter
+    // if a windows user correctly converts CRLF to LF upon commits otherwise
+    // there are errors every line.
+    "linebreak-style": 0,
+    "eol-last": 1,
+    "key-spacing"          : "off",
+    "jsx-quotes"           : [2, "prefer-single"],
+    "max-len"              : [2, 120, 2],
+    "object-curly-spacing" : [2, "always"],
+    "semi": 1,
+    "space-before-function-paren": [1, "never"],
+    "react/react-in-jsx-scope": 0,
+    "react/prop-types": [1],
+    "react/jsx-no-bind": [1, {
+      "allowArrowFunctions": false,
+      "allowBind": false,
+      "ignoreRefs": true
+    }],
+    "no-console": "off",
+    "no-case-declarations": "off",
+    "eofline": [0],
+    "no-unused-vars": [1, { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+    "arrow-parens": [2, "as-needed"]
+  }
+}

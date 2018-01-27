@@ -1,0 +1,25 @@
+.wrapper {
+  margin: 20px auto;
+  min-width: 500px;
+  max-width: 500px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  width: 150px;
+  height: 150px;
+  fill: grey;
+  flex: 1 1 120px;
+}
+
+.title {
+  text-align: center;
+}
+
+.button {
+  margin: 10px;
+}
